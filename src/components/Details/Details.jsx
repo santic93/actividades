@@ -18,11 +18,13 @@ export const Details = () => {
       <hr />
       <br />
       <h2 className='animate__animated animate__backInLeft'>
-        {nombre + ' ' + apellido}
+        Entrenador: {nombre + ' ' + apellido}
       </h2>
       <br />
       <h3>
-        <b className='animate__animated animate__bounceInUp'>{actividad}</b>
+        <b className='animate__animated animate__bounceInUp'>
+          Actividad: {actividad}
+        </b>
       </h3>
       <br />
       <hr />
