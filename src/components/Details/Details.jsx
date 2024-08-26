@@ -13,7 +13,7 @@ export const Details = () => {
       setActividad(localStorage.getItem('actividad'));
   }, []);
   return (
-    <div>
+    <div style={{ marginBottom: 200 }}>
       Detalles
       <hr />
       <br />

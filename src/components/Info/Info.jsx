@@ -73,20 +73,25 @@ export const Info = () => {
       <Button onClick={handleAddVideo} color='orange' appearance='primary'>
         Agregar Video
       </Button>
-
-      <div
-        className='videos-container'
-        style={{
-          maxHeight: videos.length > 3 ? '800px' : 'auto', // Limitar altura cuando haya más de 3 videos
-          overflowY: videos.length > 3 ? 'auto' : 'visible',
-          marginTop: '20px',
-          border: '1px solid #ccc',
-          padding: '10px',
-        }}
-      >
-        <h3>Videos Incrustados:</h3>
-        {renderVideos()}
-      </div>
+      <br />
+      <br />
+      {videos?.length ? (
+        <div
+          className='videos-container'
+          style={{
+            maxHeight: videos.length > 3 ? '800px' : 'auto', // Limitar altura cuando haya más de 3 videos
+            overflowY: videos.length > 3 ? 'auto' : 'visible',
+            marginTop: '20px',
+            border: '1px solid #ccc',
+            padding: '10px',
+          }}
+        >
+          <h3>Videos Incrustados:</h3>
+          {renderVideos()}
+        </div>
+      ) : (
+        <>Todavia no agrego videos</>
+      )}
     </div>
   );
 };
